@@ -11,29 +11,34 @@
 <body>
     
     <header>
-        <a class="logo">
-            <img src="images/logotipo.png" alt="Universidade de luanda">
-        </a>
-        <nav class="primary__navigation">
-            <ul role="list" class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">Pagina inicial</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Sobre nós</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">contactos</a></li>
-            </ul>
-        </nav>
+        <div class="container flex space-between horizontal-center">
+            <a href="index.html" class="logo">
+                <img src="images/logotipo.png" alt="Universidade de luanda">
+            </a>
+            <nav class="primary__navigation">
+                <ul role="list" class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Pagina inicial</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Sobre nós</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">contactos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
     <main>
-        <div class="hero__section">
-            <div class="hero__section-image">
-                <div class="hero__section-bg-effect">
-                    <h1>Universidade de Luanda</h1>
-                    <p>Desenvolvendo a identidade, alcançando as mais altas conquistas, preservando a cultura e a nova geração</p>
+        <div class="hero__section | bg-img">
+            <div class="hero__section-bg-effect | bg-effect">
+                <div class="container">
+                    <h1 class="bold text-size-800 uppercase">Universidade de Luanda</h1>
+                    <p class="semibold text-size-600 hero__body">Desenvolvendo a identidade, alcançando as mais altas conquistas, preservando a cultura e a nova geração</p>
                 </div>
             </div>
         </div>
-        <div class="news">
-            <h2>Ultimas Noticias</h2>
+
+        <div class="news | container">
+            <div class="text-center">
+                <h2>Ultimas Noticias</h2>
+            </div>
             <div class="cards">
                 <div class="card">
                     <div class="card__header">
@@ -55,7 +60,7 @@
                 </div>
                 <div class="card">
                     <div class="card__header">
-                        <img src="https://images.unsplash.com/photo-1585974738771-84483dd9f89f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1332&q=80" alt="">
+                        <img src="https://images.unsplash.com/photo-1585221140117-5bc4baee9cd1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80" alt="">
                     </div>
                     <div class="card__content">
                         <h2>Model KBM</h2>
@@ -64,33 +69,69 @@
                 </div>
             </div>
         </div>
-        <div class="quote">
-            <blockquote>Um dos objetivos deste site é responder a quaisquer necessidades de informação, utilizando as instalações de tecnologia da informação existentes, especialmente durante esta pandemia de Covid 19. Temos plena consciência de que, para avançar na educação na era do rápido desenvolvimento da Tecnologia da Informação, são necessárias várias instalações de infraestrutura propícia, as necessidades de informação de alunos, professores, pais e comunidade, por isso tentamos fazer isso acontecer o máximo possível. que possível</blockquote>
+
+        <div class="quote | bg-grayishblue">
+            
+            <div class="container">
+                <blockquote>
+                    <p>
+                        Um dos objetivos deste site é responder a quaisquer necessidades de informação, utilizando as instalações de tecnologia da informação existentes, especialmente durante esta pandemia de Covid 19. Temos plena consciência de que, para avançar na educação na era do rápido desenvolvimento da Tecnologia da Informação, são necessárias várias instalações de infraestrutura propícia, as necessidades de informação de alunos, professores, pais e comunidade, por isso tentamos fazer isso acontecer o máximo possível.
+                    </p>
+                    <cite>Alfredo Gabriel Buza, Reitor da Universidade de Luanda</cite>
+                </blockquote>
+            </div>
+
         </div>
     </main>
 
-    <footer>
+    <footer class="bg-darkgrayishblue">
 
-        <div class="logo__big"></div>
-        <div class="links">
+
+        <div class="container flex">
+
+            <div class="links">
             
-            <div class="contacts">
-                <div class="telefone">
-                    <p>telefone</p>
-                </div>
-                <div class="email">
-                    <p>email</p>
-                </div>
-            </div>
+                <div class="contacts text-clr-white">
+                    <h2 class="bold">Informações</h2>
+                    
+                    <div class="info__links">
+                        <div class="item email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>info@isgest.ed.ao</p>
+                        </div>
+                        
+                        <div class="item telefone">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+244 945 720 796</p>
+                        </div>
+                        
+                        <div class="item gps flex">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Campus Universitário do Camama, frente o Portão principal do Estádio 11 de Novembro</p>
+                        </div>
+                    </div>
 
-            <div class="social__links">
-                <div class="facebook"><p>facebook</p></div>
-                <div class="twitter"><p>twitter</p></div>
-                <div class="instagram"><p>instagram</p></div>
+                    <div class="social__links">
+                        <a href="#" class="facebook">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                        <a href="#" class="twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+
             </div>
         </div>
+
+
     </footer>
 
+    <script src="https://kit.fontawesome.com/8236aaed16.js" crossorigin="anonymous"></script>
     <script src="scripts/script.js"></script>
 </body>
 </html>
