@@ -1,11 +1,11 @@
 /*Css variables*/
 :root{
     --clr-primary-white: hsl(0, 0%, 100%);
+    --clr-primary-gray: hsl(0, 2%, 35%);
     --clr-primary-black: hsl(0, 0%, 0%);
     --clr-neutral-grayishblue: hsl(208, 7%, 46%);
     --clr-neutral-darkgrayishblue: hsl(210, 10%, 23%);
-    --clr-primary-accent: ;
-
+    --clr-primary-accent: hsl(200, 86%, 54%);
 
     --ff-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     --ff-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
@@ -44,7 +44,7 @@ header{
     padding: 1.5em 0;
 }
 .logo{
-    width: 3rem;
+    width: 3.5rem;
     aspect-ratio: 1;
 }
 .nav__link{
@@ -52,6 +52,11 @@ header{
     font-size: var(--fs-500);
     font-weight: var(--fw-bold);
     text-transform: uppercase;
+}
+.nav__item:hover .nav__link{
+    color: var(--clr-primary-accent);
+    border-bottom: .175rem solid var(--clr-primary-accent);
+    padding-bottom: .3em;
 }
 
 @media (max-width: 50em){
@@ -122,7 +127,7 @@ header{
 }
 .news > div > h2{
     display: inline-block;
-    border-bottom: 4px dotted var(--clr-primary-black);
+    border-bottom: 4px dotted var(--clr-primary-accent);
     padding-bottom: .3em;
     text-transform: uppercase;
 }
@@ -137,6 +142,10 @@ header{
     border-radius: .375em;
     overflow: hidden;
 }
+.card:hover{
+    box-shadow: 0 0 20px rgba(33,33,33,.3)
+}
+
 .card__header > img{
     width: 100%;
     height: 100%;
@@ -145,7 +154,9 @@ header{
 .card__content{
     padding: 1.2em;
 }
-
+.card__content p{
+    color: var(--clr-primary-gray);
+}
 @media(min-width: 50em){
     .cards {
         display: grid;
@@ -175,6 +186,7 @@ blockquote cite{
     display: block;
     text-align: right;
     font-weight: var(--fw-bold);
+    color: var(--clr-neutral-darkgrayishblue);
 }
 blockquote cite::before{
     content: "\2014\0020";
@@ -228,7 +240,7 @@ footer{
 }
 
 .fa-brands:hover{
-    color: brown;
+    color: var(--clr-primary-accent);
 }
 
 @media (min-width: 50em){
