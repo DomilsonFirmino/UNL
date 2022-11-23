@@ -1,0 +1,53 @@
+
+/*footer*/
+footer{
+    padding: 2em 1em;
+}
+
+.contacts{
+    color: var(--clr-primary-white);
+}
+.contacts h2{
+    font-size: 1.765rem;
+    text-align: center;
+    margin-bottom: .5em;
+}
+.info__links{
+    margin-bottom: 1.8em;
+}
+.item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.item p{
+    font-size: var(--fs-500);
+} 
+.item:not(:last-child){
+    margin-bottom: .8em;
+}
+.gps{
+    line-height: 1.2;
+}
+
+
+.social__links{
+    display: flex;
+    gap: 1.4em;
+}
+.social__links .fa-brands{
+    font-size: 1.8rem;
+}
+
+.fa-brands:hover{
+    color: var(--clr-primary-accent);
+}
+
+@media (min-width: 50em){
+    .contacts h2{
+        text-align: initial;
+    }
+    .gps{
+        max-width: 60ch;
+    }
+}

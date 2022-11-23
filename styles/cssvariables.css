@@ -1,0 +1,61 @@
+/*Css variables*/
+:root{
+    --clr-primary-white: hsl(0, 0%, 100%);
+    --clr-primary-gray: hsl(0, 2%, 35%);
+    --clr-primary-black: hsl(0, 0%, 0%);
+    --clr-neutral-grayishblue: hsl(208, 7%, 46%);
+    --clr-neutral-darkgrayishblue: hsl(210, 10%, 23%);
+    --clr-primary-accent: hsl(200, 86%, 54%);
+
+    --ff-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --ff-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    
+    --fs-300: 0.975rem;
+    --fs-400: 1rem;
+    --fs-500: 1.125rem;
+    --fs-600: 1.25rem;
+    --fs-700: 2.375rem;
+    --fs-800: 3rem;
+    --fs-900: 4rem;
+
+    --fw-regular:400;
+    --fw-medium: 500;
+    --fw-semibold:400;
+    --fw-bold:700;
+    --fw-big:900;
+
+    font-size: 16px;
+}
+
+/*general styling*/
+.container{
+    width: min(calc(100% - 4rem), 88em);
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    font-family: var(--ff-monospace, --ff-sans-serif);
+    position: relative;
+}
+
+button{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+.sr-only{
+    position: absolute;
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	clip: rect(0,0,0,0) !important;
+	white-space: nowrap !important;
+	border: 0 !important;
+}
