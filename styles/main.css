@@ -23,6 +23,8 @@
     --fw-semibold:400;
     --fw-bold:700;
     --fw-big:900;
+
+    font-size: 16px;
 }
 
 /*general styling*/
@@ -37,9 +39,17 @@ a{
 }
 body{
     font-family: var(--ff-monospace, --ff-sans-serif);
+    position: relative;
+}
+
+button{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 /*header*/
+
 header{
     padding: 1.5em 0;
 }
@@ -47,11 +57,18 @@ header{
     width: 3.5rem;
     aspect-ratio: 1;
 }
+.nav__icon{
+    width: 1.5rem;
+}
+.close{
+    display: none;
+}
 .nav__link{
     color: var(--clr-primary-black);
     font-size: var(--fs-500);
     font-weight: var(--fw-bold);
     text-transform: uppercase;
+    transition: all 0.2s;
 }
 .nav__item:hover .nav__link{
     color: var(--clr-primary-accent);
@@ -59,8 +76,44 @@ header{
     padding-bottom: .3em;
 }
 
+.open{
+    display: block;
+}
 @media (max-width: 50em){
     .primary__navigation{
+        display: none;
+
+        position: absolute;
+        top: 6.5rem;
+        left: 0;
+        right: 0;
+        z-index: 100;
+
+        background-color: white;
+        padding: 1.5em;
+        transition: all  0.2s;
+    }
+
+    .nav__list{
+        padding: 0;
+        text-align: center;
+        display: grid;
+        gap: 1rem;
+    }
+
+    .primary__navigation[data-visible]{
+        display: block;
+    }
+
+    .nav__toggle{
+        display: flex;
+        align-items: center;
+    }
+    .nav__toggle.active .close{
+        display: block;
+    }
+
+    .nav__toggle.active .open{
         display: none;
     }
 }
@@ -79,6 +132,9 @@ header{
     }
     .nav__item:not(:last-child){
         margin-right: 1em;
+    }
+    .nav__toggle{
+        display: none !important;
     }
 }
 
@@ -143,7 +199,8 @@ header{
     overflow: hidden;
 }
 .card:hover{
-    box-shadow: 0 0 20px rgba(33,33,33,.3)
+    box-shadow: 0 0 20px rgba(33,33,33,.3);
+    border: 1px solid hsla(0, 0%, 0%, .235);
 }
 
 .card__header > img{
@@ -169,14 +226,14 @@ header{
 
 
 blockquote{
-    padding: 2em 0;
+    padding: 4em 0;
     color: var(--clr-primary-white);
     max-width: 106ch;
     margin: 0 auto;
 }
 
 blockquote p{
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     font-style: italic;
     text-indent: 2rem;
     text-justify: inter-word;
@@ -250,6 +307,19 @@ footer{
     .gps{
         max-width: 60ch;
     }
+}
+
+.sr-only{
+    position: absolute;
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	clip: rect(0,0,0,0) !important;
+	white-space: nowrap !important;
+	border: 0 !important;
 }
 /*utility classes*/
 .flex{display: flex;}

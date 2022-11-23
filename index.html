@@ -19,7 +19,13 @@
             <a href="index.html" class="logo">
                 <img src="images/logotipo.png" alt="Universidade de luanda">
             </a>
-            <nav class="primary__navigation">
+            <button class="nav__toggle" aria-controls="primary__navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <img class="nav__icon open" src="images/icon-menu.svg" alt="">
+                <img class="nav__icon close" src="images/icon-close.svg" alt="">
+            </button>
+            
+            <nav class="primary__navigation" id="primary__navigation">
                 <ul role="list" class="nav__list">
                     <li class="nav__item"><a href="#" class="nav__link">Pagina inicial</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Sobre nós</a></li>
