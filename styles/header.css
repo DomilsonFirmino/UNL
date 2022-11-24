@@ -3,11 +3,11 @@ header{
     padding: 1.5em 0;
 }
 .logo{
-    width: 3.5rem;
+    width: 5rem;
     aspect-ratio: 1;
 }
 .nav__icon{
-    width: 1.5rem;
+    width: 1.675rem;
 }
 .close{
     display: none;
@@ -28,7 +28,7 @@ header{
 .open{
     display: block;
 }
-@media (max-width: 50em){
+@media (max-width: 51em){
     .primary__navigation{
         display: none;
 
@@ -67,7 +67,7 @@ header{
     }
 }
 
-@media (min-width: 50em){
+@media (min-width: 51em){
     .primary__navigation{
         display: block;
     }

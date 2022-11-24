@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/styles/reset.css">
-    <link rel="stylesheet" href="/styles/cssvariables.css">
-    <link rel="stylesheet" href="/styles/header.css">
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/footer.css">
-    <link rel="stylesheet" href="/styles/utilityClasses.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/cssvariables.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/utilityClasses.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/Favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/Favicon/favicon-32x32.png">
@@ -35,7 +35,8 @@
                 <ul role="list" class="nav__list">
                     <li class="nav__item"><a href="index.html" class="nav__link">Pagina inicial</a></li>
                     <li class="nav__item"><a href="sobre.html" class="nav__link">Sobre nós</a></li>
-                    <li class="nav__item"><a href="contactos.html" class="nav__link">contactos</a></li>
+                    <li class="nav__item"><a href="#contactos" class="nav__link">contactos</a></li>
+                    <li class="nav__item"><a href="noticias.html" class="nav__link">Noticias</a></li>
                 </ul>
             </nav>
         </div>
@@ -56,7 +57,7 @@
                 <h2>Ultimas Noticias</h2>
             </div>
             <div class="cards">
-                <a href="artigo.html" class="card">
+                <a href="artigos/protokol.html" class="card">
                     <div class="card__header">
                         <img src="https://images.unsplash.com/photo-1585221140117-5bc4baee9cd1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80" alt="">
                     </div>
@@ -65,7 +66,7 @@
                         <p>15 Feb 2021</p>
                     </div>
                 </a>
-                <a href="artigo.html" class="card">
+                <a href="artigos/budaya.html" class="card">
                     <div class="card__header">
                         <img src="https://images.unsplash.com/photo-1612209617892-843e40d053a9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" alt="">
                     </div>
@@ -74,7 +75,7 @@
                         <p>14 Feb 2021</p>
                     </div>
                 </a>
-                <a href="artigo.html" class="card">
+                <a href="artigos/protokol.html" class="card">
                     <div class="card__header">
                         <img src="https://images.unsplash.com/photo-1585221140117-5bc4baee9cd1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80" alt="">
                     </div>
@@ -90,10 +91,10 @@
             
             <div class="container">
                 <blockquote>
-                    <p>
+                    <p class="text-size-600">
                         Um dos objetivos deste site é responder a quaisquer necessidades de informação, utilizando as instalações de tecnologia da informação existentes, especialmente durante esta pandemia de Covid 19. Temos plena consciência de que, para avançar na educação na era do rápido desenvolvimento da Tecnologia da Informação, são necessárias várias instalações de infraestrutura propícia, as necessidades de informação de alunos, professores, pais e comunidade, por isso tentamos fazer isso acontecer o máximo possível.
                     </p>
-                    <cite>Alfredo Gabriel Buza, Reitor da Universidade de Luanda</cite>
+                    <cite class="text-size-600">Alfredo Gabriel Buza, Reitor da Universidade de Luanda</cite>
                 </blockquote>
             </div>
 
@@ -103,11 +104,13 @@
     <footer class="bg-darkgrayishblue">
 
 
-        <div class="container flex">
+        <div class="footer__wrapper container flex">
+
+            <p class="UNI text-size-800 bold">Universidade de Luanda</p>
 
             <div class="links">
             
-                <div class="contacts text-clr-white">
+                <div class="contacts text-clr-white" id="contactos">
                     <h2 class="bold">Informações</h2>
                     
                     <div class="info__links">

@@ -1,4 +1,4 @@
-/*Main*/
+/*Main Index*/
 .hero__section{
     margin-bottom: 2.5em;
     display: flex;
@@ -85,7 +85,7 @@
 
 
 blockquote{
-    padding: 4em 0;
+    padding: 3em 0;
     color: var(--clr-primary-white);
     max-width: 106ch;
     margin: 0 auto;
@@ -94,7 +94,6 @@ blockquote{
 blockquote p{
     margin-bottom: 1.5em;
     font-style: italic;
-    text-indent: 2rem;
     text-justify: inter-word;
 }
 
@@ -113,4 +112,92 @@ blockquote cite::before{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
+}
+
+/*Main sobre*/
+
+
+/*Main contactos*/
+
+
+/*Main artigo*/
+.article{
+    margin-bottom: 3em;
+}
+.article__img{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    height: 25rem;
+    margin-bottom: 2.5em;
+
+
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.315), 
+        rgba(0, 0, 0, 0.315)
+      ),url("https://images.unsplash.com/photo-1612209617892-843e40d053a9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.article__proto{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.315), 
+        rgba(0, 0, 0, 0.315)
+      ),url("https://images.unsplash.com/photo-1585221140117-5bc4baee9cd1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80");
+    background-position: top;
+}
+
+.head{
+    padding: .8em 1.5em;
+    background-color: var(--clr-neutral-light);
+    margin-bottom: 1em;
+}
+.head a{
+    transition: 0.05s;
+}
+.head a:hover,
+.head a:focus-visible{
+    border-bottom: .175rem solid var(--clr-primary-accent);
+    padding-bottom: .01rem;
+}
+.head + ul{
+    list-style: none;
+    display: grid;
+    gap: .4em;
+    padding: 0 1.5em;
+}
+.head + ul > li a:hover,
+.head + ul > li a:focus-visible{
+    color: var(--clr-primary-accent);
+}
+
+.main{
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 56em){
+    .article__content{
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    .main{
+        width: 69%;
+    }
+    aside{
+        width: 28%;
+    }
+
+}
+
+.main__text{
+    display: grid;
+    gap: 2rem;
+    padding: .8em 1.5em;
 }

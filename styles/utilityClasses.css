@@ -23,4 +23,9 @@
 .text-size-800{font-size: var(--fs-800);}
 .text-size-900{font-size: var(--fs-900);}
 
+
+.text-clr-accent{color:var(--clr-primary-accent)}
+.text-clr-gray{color: var(--clr-neutral-darkgrayishblue);}
+.text-clr-light{color: var(--clr-neutral-light);}
+
 .uppercase{text-transform: uppercase;}
